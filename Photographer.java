@@ -28,8 +28,8 @@ public class Photographer {
 
         // Create a partial sum array for P and B. This will allow us to count the number of each in
         // the vicinity of every A.
-        int sumOfP[] = new int[N+1];
-        int sumOfB[] = new int[N+1];
+        int[] sumOfP = new int[N+1];
+        int[] sumOfB = new int[N+1];
         sumOfB[0] = 0;
         sumOfP[0] = 0;
         for (int i=1; i<=N; i++) {

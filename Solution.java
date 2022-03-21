@@ -10,7 +10,7 @@ public class Solution {
         long N = 10;
         long K = 1;
         int  M = 2;
-        long S[] = { 2, 6 };
+        long[] S = { 2, 6 };
         long result = solution.getMaxAdditionalDinersCount(N, K, M, S);
         System.out.println(result);
     }
@@ -18,8 +18,8 @@ public class Solution {
     private static void PhotographerDriver() {
         Photographer P = new Photographer();
         String[] s = { "APABA", "APABA", ".PBAAP.B" };
-        int X[] = { 1, 2, 1 };
-        int Y[] = { 2, 3, 3 };
+        int[] X = { 1, 2, 1 };
+        int[] Y = { 2, 3, 3 };
         for (int i=0; i<s.length; i++) {
             long r = P.getArtisticPhotographCount(s[i].length(), s[i], X[i], Y[i]);
             System.out.printf("%s [%d-%d]: %d", s[i], X[i], Y[i], r);
@@ -38,7 +38,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        KaitenzushiDriver();
+        PhotographerDriver();
     }
 
 
