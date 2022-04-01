@@ -37,8 +37,19 @@ public class Solution {
         }
     }
 
+    private static void HopsDriver() {
+        Hops H = new Hops();
+        long[][] Ps = {{1},{5,2,4}};
+        long[] Ns = {3, 6};
+        int[] Fs = {1, 3};
+        for (int i=0; i<Ps.length; i++) {
+            long result = H.getSecondsRequired(Ns[i], Fs[i], Ps[i]);
+            System.out.println(result);
+        }
+    }
+
     public static void main(String[] args) {
-        PhotographerDriver();
+        HopsDriver();
     }
 
 
